@@ -1,0 +1,3 @@
+TODO:
+- Finaliser les différentes composantes (polices, couleurs...)
+- Commencer la responsive
