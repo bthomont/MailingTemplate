@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive mail template 1 </title>
-
-    <style type="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Responsive mail template 2</title>
+	<style type="text/css">
 		body {
 			margin: 0;
 		}
@@ -34,8 +33,8 @@
             text-align: center;
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 		}
-	
-		h1 {
+
+        h1 {
             font-weight: 400;
             color: #7a3f8e;
 
@@ -46,6 +45,7 @@
             font-style: italic;
             font-weight: 400;
             margin: 0;
+            text-align: left;
 		}
 
 		.two-columns {
@@ -60,20 +60,51 @@
 		}
 
 		.two-columns .padding {
-            padding: 20px;
+            padding: 30px;
 		}
 
 		.two-columns .content {
             font-size: 16px;
             line-height: 22px;
 		}
+		.three-columns {
+            padding: 60px 0 25px;
+            font-size: 0;
+		}
+		.three-columns .column {
+            width: 100%;
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: top;
+		}
+		.three-columns .padding {
+            padding: 0 15px 25px;
+		}
+		.three-columns .content {
+
+            font-size: 16px;
+            line-height: 22px;
+		}
+		h3 {
+            font-size: 19px;
+            font-weight: 400;
+            margin: 0;
+            color: #68626b;
+		}
+
+        @media screen and (max-width: 600px){
+            h2{
+                text-align: center;
+            }
+        }
 	</style>
 </head>
+<body>
 
-<body> 
 	<center class="wrapper">
 
 		<table class="main" width="100%">
+
 
 <!-- ENTÊTE -->
             <tr>
@@ -82,6 +113,8 @@
                     style="max-width: 100%;">
                 </td>
             </tr>
+
+
 
 <!-- TITRE -->
 
@@ -107,29 +140,29 @@
 
 
 <!-- SEPARATEUR -->
-            <tr>
-                <td style="margin: 0; padding: 0 0 25px 0;">
-                    <hr style="width: 95%; border-top: 3px solid #FAF8FF;" >
-                </td> 
-            </tr>
+<tr>
+    <td style="margin: 0; padding: 0 0 10px 0;">
+        <hr style="width: 95%; border-top: 3px solid #FAF8FF;" >
+    </td> 
+</tr>
 
 
 <!-- ILLUSTRATIONS 1 -->
 
             <tr style="background-color: #FAF8FF;">
                 <td style="padding: 15px 0;">
-                    <table width="100%">
+                    <table width="100%" dir="rtl">
                         <tr>
                             <td class="two-columns">
 
-                                <table class="column">
+                                <table class="column" dir="ltr">
                                     <tr>
                                         <td class="padding">
 
                                             <table class="content">
                                                 <tr>
                                                     <td>
-                                                        <img src="https://billythomont.com/data/mailing/Image_310x310.jpg" alt="" width="260PX">
+                                                        <img src="https://billythomont.com/data/mailing/Image_310x310.jpg" alt="" width="240PX">
                                                     </td>
                                                 </tr>
                                             </table> <!-- fin content -->
@@ -139,14 +172,14 @@
                                 </table> <!-- fin column -->
 
 
-                                <table class="column">
+                                <table class="column" dir="ltr">
                                     <tr>
                                         <td class="padding">
 
                                             <table class="content">
                                                 <tr>
                                                     <td>
-                                                        <h2> Lorem Ipsum </h2>
+                                                        <h2 > Lorem Ipsum </h2>
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -169,68 +202,11 @@
                     </table>
                 </td>
             </tr>
-			
 
-<!-- ILLUSTRATION 2 -->
+
+<!-- ILLUSTRATIONS 2 -->
 
             <tr>
-                <td style="padding:15px 0;">
-                    <table width="100%">
-                        <tr>
-                            <td class="two-columns">
-
-                                <table class="column">
-                                    <tr>
-                                        <td class="padding">
-
-                                            <table class="content">
-                                                <tr>
-                                                    <td>
-                                                        <img src="https://billythomont.com/data/mailing/Image_310x310.jpg" alt="" width="260PX">
-                                                    </td>
-                                                </tr>
-                                            </table> <!-- fin content -->
-
-                                        </td> <!-- fin padding -->
-                                    </tr>
-                                </table> <!-- fin column -->
-
-
-                                <table class="column">
-                                    <tr>
-                                        <td class="padding">
-
-                                            <table class="content">
-                                                <tr>
-                                                    <td>
-                                                        <h2> Lorem Ipsum </h2>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <p style=" line-height: 23px; text-align: justify;">
-                                                            Phasellus aliquet quam id bibendum lobortis. Sed hendrerit et diam a egestas. In et 
-                                                            augue ligula. Sed non magna a sem dictum porttitor eget nec massa.
-                                                        </p>
-                                                    </td>
-                                                </tr>
-                                            </table> <!-- fin content -->
-
-                                        </td> <!-- fin padding -->
-                                    </tr>
-                                </table> <!-- fin column -->
-
-                            </td> <!-- fin two columns -->
-                        </tr>
-
-                    </table>
-                </td>
-            </tr>
-
-
-<!-- ILLUSTRATION 3 -->
-
-            <tr style="background-color: #FAF8FF;">
                 <td style="padding: 15px 0;">
                     <table width="100%">
                         <tr>
@@ -238,12 +214,12 @@
 
                                 <table class="column">
                                     <tr>
-                                        <td class="padding">
+                                        <td class="padding" >
 
                                             <table class="content">
                                                 <tr>
-                                                    <td>
-                                                        <img src="https://billythomont.com/data/mailing/Image_310x310.jpg" alt="" width="260PX">
+                                                    <td >
+                                                        <img src="https://billythomont.com/data/mailing/Image_310x310.jpg" alt="" width="240PX">
                                                     </td>
                                                 </tr>
                                             </table> <!-- fin content -->
@@ -285,56 +261,152 @@
             </tr>
 
 
-<!-- ILLUSTRATION 4 -->
+
+<!-- TITRE -->
 
             <tr>
-                <td style="padding:15px 0;">
+                <td style="padding: 45px 0 0 0; margin: 0;">
                     <table width="100%">
                         <tr>
-                            <td class="two-columns">
+                            <td style="margin: 0;">
+                                <h1 style=" margin:0; padding: 0;">Lorem Ipsum</h1>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+
+<!-- SEPARATEUR -->
+            <tr>
+                <td style="margin: 0; padding: 0;">
+                    <hr style="width: 95%; border-top: 3px solid #FAF8FF;" >
+                </td> 
+            </tr>
+			
+<!-- TROIS COLONNES -->
+
+            <tr>
+                <td>
+                    <table width="100%">
+
+                        <tr>
+                            <td class="three-columns">
 
                                 <table class="column">
+
                                     <tr>
                                         <td class="padding">
 
                                             <table class="content">
                                                 <tr>
-                                                    <td>
-                                                        <img src="https://billythomont.com/data/mailing/Image_310x310.jpg" alt="" width="260PX">
+                                                    <td style="padding: 5px 0 10px;">
+                                                        <h3> Lorem Ipsum </h3>
                                                     </td>
                                                 </tr>
-                                            </table> <!-- fin content -->
 
-                                        </td> <!-- fin padding -->
-                                    </tr>
-                                </table> <!-- fin column -->
-
-
-                                <table class="column">
-                                    <tr>
-                                        <td class="padding">
-
-                                            <table class="content">
                                                 <tr>
                                                     <td>
-                                                        <h2> Lorem Ipsum </h2>
+                                                        <img src="https://billythomont.com/data/mailing/Image_310x310.jpg" alt="" width="170px">
                                                     </td>
                                                 </tr>
+
+
                                                 <tr>
-                                                    <td>
-                                                        <p style=" line-height: 23px; text-align: justify;">
-                                                            Phasellus aliquet quam id bibendum lobortis. Sed hendrerit et diam a egestas. In et 
-                                                            augue ligula. Sed non magna a sem dictum porttitor eget nec massa.
+                                                    <td style="padding: 3px 0 10px;"> 
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                                         </p>
+
                                                     </td>
                                                 </tr>
+
                                             </table> <!-- fin content -->
+
 
                                         </td> <!-- fin padding -->
                                     </tr>
-                                </table> <!-- fin column -->
 
-                            </td> <!-- fin two columns -->
+                                </table> <!-- fin column 1 -->
+
+
+
+                                <table class="column">
+
+                                    <tr>
+                                        <td class="padding">
+
+                                            <table class="content">
+                                                <tr>
+                                                    <td style="padding: 5px 0 10px;">
+                                                        <h3> Lorem Ipsum </h3>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <img src="https://billythomont.com/data/mailing/Image_310x310.jpg" alt="" width="170px">
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td style="padding: 3px 0 10px;"> 
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                                        </p>
+
+                                                    </td>
+                                                </tr>
+
+                                            </table> <!-- fin content -->
+
+
+                                        </td> <!-- fin padding -->
+                                    </tr>
+
+                                </table> <!-- fin column 2-->
+
+
+
+                                <table class="column">
+
+                                    <tr>
+                                        <td class="padding">
+
+                                            <table class="content">
+                                                <tr>
+                                                    <td style="padding: 5px 0 10px;">
+                                                        <h3> Lorem Ipsum </h3>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <img src="https://billythomont.com/data/mailing/Image_310x310.jpg" alt="" width="170px">
+                                                    </td>
+                                                </tr>
+
+
+                                                <tr>
+                                                    <td style="padding: 3px 0 10px;"> 
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                        </p>
+
+                                                    </td>
+                                                </tr>
+
+                                            </table> <!-- fin content -->
+
+
+                                        </td> <!-- fin padding -->
+                                    </tr>
+
+                                </table> <!-- fin column 3-->
+
+
+                            </td> <!-- fin three columns-->
                         </tr>
 
                     </table>
@@ -345,7 +417,7 @@
 
 <!-- SEPARATEUR -->
             <tr>
-                <td style="margin: 0; padding: 25px 0 0 0;">
+                <td style="margin: 0; padding: 0;">
                     <hr style="width: 95%; border-top: 3px solid #FAF8FF;" >
                 </td> 
             </tr>
@@ -366,7 +438,6 @@
                 </td>
             </tr>
 			
-
 <!-- PIED DE PAGE -->
 
             <tr>
@@ -388,13 +459,11 @@
                     
                 </td>
             </tr>
-            
-			
 			
 
 		</table> <!-- End Main Class -->
 
 	</center> <!-- End Wrapper -->
-    
+
 </body>
 </html>
