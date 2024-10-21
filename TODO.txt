@@ -1,3 +1,0 @@
-TODO:
-- Générer différents templates
-- Tester l'envoi de mail
